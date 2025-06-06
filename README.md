@@ -47,3 +47,10 @@ A simple, elegant transparent notepad application that allows you to take notes 
 - The window has no standard window decorations for a cleaner look
 - All content is saved in a file named `notepad_content.txt` in the same directory as the application 
 >>>>>>> master
+>>>>>>> ---
+
+© 2025 Aspirinexar. All rights reserved.
+
+This software is developed and maintained by **Aspirinexar**.  
+Unauthorized copying, distribution, or modification of this software is strictly prohibited.
+
