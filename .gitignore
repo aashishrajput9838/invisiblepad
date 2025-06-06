@@ -1,0 +1,20 @@
+# PyInstaller build directories
+build/
+dist/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+
+# IDE specific files
+.vscode/
+.idea/
+
+# Windows specific
+*.exe
+*.spec 
