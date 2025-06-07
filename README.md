@@ -1,7 +1,5 @@
-<<<<<<< HEAD
-# transparent-notepad
-A simple, elegant transparent notepad application that allows you to take notes with a semi-transparent window.
-=======
+![InvisiblePad Logo](assets/logo/invisiblepad logo.png)
+
 # Transparent Notepad
 python transparent_notepad.py
 
@@ -45,5 +43,4 @@ A simple, elegant transparent notepad application that allows you to take notes 
 
 - The window is semi-transparent (90% opacity) to allow you to see content behind it
 - The window has no standard window decorations for a cleaner look
-- All content is saved in a file named `notepad_content.txt` in the same directory as the application 
->>>>>>> master
+- All content is saved in a file named `notepad_content.txt` in the same directory as the application
