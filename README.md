@@ -68,4 +68,5 @@ To use a custom icon for the executable (e.g., `invisiblepad logo.png`):
 This software is developed and maintained by **Aspirinexar**.  
 Unauthorized copying, distribution, or modification of this software is strictly prohibited.
 
-![Aspirinexar Logo](aspirinexar logo.jpg)
+![Aspirinexar Logo](aspirinexar%20logo.jpg)
+
