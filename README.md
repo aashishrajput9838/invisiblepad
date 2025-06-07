@@ -1,4 +1,5 @@
-![InvisiblePad Logo](assets/logo/invisiblepad logo.png)
+![InvisiblePad Logo](assets/logo/invisiblepad%20logo.png)
+
 
 # Transparent Notepad
 python transparent_notepad.py
