@@ -1,25 +1,43 @@
+# Transparent Notepad
+
 ![InvisiblePad Logo](assets/logo/invisiblepad%20logo.png)
 
+A simple, elegant transparent notepad application that allows you to take notes with a semi-transparent window. The application appears in the Windows taskbar while maintaining a clean, minimal interface.
 
-# Transparent Notepad
+## Quick Start
+
+Run the application:
+```bash
 python transparent_notepad.py
+```
 
+Build executable:
+```bash
 pyinstaller transparent_notepad.spec
-
-A simple, elegant transparent notepad application that allows you to take notes with a semi-transparent window.
+```
 
 ## Features
 
-- Semi-transparent window (90% opacity)
-- Draggable window (click and drag the title bar)
-- Auto-saves content every 30 seconds
-- Persistent storage (content is saved between sessions)
-- Clean, minimal interface
+- **Semi-transparent window** - 95% opacity by default, adjustable via controls
+- **Taskbar presence** - Appears in Windows taskbar with custom icon
+- **Draggable window** - Click and drag the title bar to move the window
+- **Auto-save** - Content automatically saved every 30 seconds
+- **Persistent storage** - Content preserved between sessions
+- **Adjustable opacity** - Increase or decrease transparency using +/- buttons
+- **Always-on-top** - Pin the window to stay above other applications
+- **Window sizing** - Multiple preset sizes and manual adjustment options
+- **Text zoom** - Zoom text in/out with keyboard shortcuts or mouse wheel
+- **Full text editing** - Supports all standard text editing operations
+- **Scrollable content** - Horizontal and vertical scrollbars for large documents
+- **Keyboard shortcuts** - Various shortcuts for enhanced productivity
+- **Clean, minimal interface** - Custom title bar with intuitive controls
 
 ## Requirements
 
 - Python 3.x
 - tkinter (usually comes with Python installation)
+- pywin32 (for Windows-specific functionality)
+- Pillow (for icon conversion)
 
 ## How to Run
 
@@ -35,16 +53,36 @@ A simple, elegant transparent notepad application that allows you to take notes 
 
 ## Usage
 
-- Click and drag the title bar to move the window
-- Click the × button in the top-right corner to close the application
-- Your notes are automatically saved every 30 seconds
-- Content is preserved between sessions
+- **Moving the window**: Click and drag the title bar to move the window
+- **Closing the application**: Click the × button in the top-right corner
+- **Adjusting opacity**: Use the +/- buttons in the title bar or Ctrl+Up/Down keys
+- **Toggling always-on-top**: Click the "Pin" button to keep the window above others
+- **Changing window size**: Click the "Size" button to cycle through preset sizes
+- **Zooming text**: Use Ctrl+Plus/Minus or Ctrl+MouseWheel to zoom in/out
+- **Resetting zoom**: Press Ctrl+0 to return to default text size
+- **Saving content**: Notes are automatically saved every 30 seconds
+- **Persistent storage**: All content is saved in `notepad_content.txt`
+
+### Keyboard Shortcuts
+
+- **Alt+T** - Toggle window visibility (completely transparent/opaque)
+- **Ctrl+Up/Down** - Increase/decrease window opacity
+- **Ctrl+Plus/Minus** - Zoom text in/out
+- **Ctrl+MouseWheel** - Zoom text (trackpad)
+- **Ctrl+0** - Reset zoom to default
+- **Ctrl+Right/Left** - Increase/decrease window width
+- **Ctrl+Shift+Up/Down** - Increase/decrease window height
+- **Ctrl+A** - Select all text
+- **Ctrl+C/V/X** - Copy/Paste/Cut text
+- **Ctrl+Z/Y** - Undo/Redo actions
 
 ## Notes
 
-- The window is semi-transparent (90% opacity) to allow you to see content behind it
-- The window has no standard window decorations for a cleaner look
-- All content is saved in a file named `notepad_content.txt` in the same directory as the application 
+- The window is semi-transparent (95% opacity) by default to allow you to see content behind it
+- The application appears in the Windows taskbar with a custom icon
+- All content is saved in a file named `notepad_content.txt` in the same directory
+- The application maintains its position and transparency settings between sessions
+- Window decorations are customized for a cleaner, more professional look
 
 ## Customizing the Executable Icon
 
@@ -62,6 +100,19 @@ To use a custom icon for the executable (e.g., `invisiblepad logo.png`):
    pyinstaller transparent_notepad.spec
    ```
    The executable with the new icon will be in the `dist` directory.
+
+## Building the Executable
+
+To create a standalone executable:
+
+1. Install PyInstaller: `pip install pyinstaller`
+2. Run the build command:
+   ```
+   pyinstaller transparent_notepad.spec
+   ```
+3. Find the executable in the `dist` folder
+
+## License
 
 © 2025 Aspirinexar. All rights reserved.
 

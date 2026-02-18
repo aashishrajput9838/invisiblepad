@@ -11,6 +11,9 @@ class TransparentNotepad:
         self.root = root
         self.root.title("Transparent Notepad")
         
+        # Set window icon if ICO file exists
+        self.set_window_icon()
+        
         # Initialize always on top state
         self.always_on_top = False
         
@@ -18,8 +21,9 @@ class TransparentNotepad:
         self.transparency = 0.95
         self.root.attributes('-alpha', self.transparency)
         
-        # Remove window decorations and do not show in taskbar
-        self.root.overrideredirect(True)
+        # Use regular window to appear in taskbar
+        self.root.overrideredirect(False)
+        self.show_in_taskbar = True
         
         # Get the window handle
         self.hwnd = win32gui.GetForegroundWindow()
@@ -186,6 +190,22 @@ class TransparentNotepad:
         for button in [self.minus_button, self.plus_button, self.always_on_top_button, self.close_button]:
             button.bind('<Enter>', lambda e, b=button: self.on_button_hover(b))
             button.bind('<Leave>', lambda e, b=button: self.on_button_leave(b))
+    
+    def set_window_icon(self):
+        """Set window icon for taskbar visibility"""
+        try:
+            # Try to set icon from ICO file
+            icon_path = "invisiblepad_logo.ico"
+            if os.path.exists(icon_path):
+                self.root.iconbitmap(icon_path)
+            else:
+                # Fallback to default notepad icon
+                default_icon = "notepad.ico"
+                if os.path.exists(default_icon):
+                    self.root.iconbitmap(default_icon)
+        except Exception as e:
+            print(f"Could not set window icon: {e}")
+            # Continue without icon if setting fails
     
     def on_button_hover(self, button):
         button.configure(bg='#106ebe')  # Darker blue on hover
