@@ -17,4 +17,9 @@ env/
 
 # Windows specific
 *.exe
-*.spec 
+*.spec
+
+# Executables
+/dist/
+/build/
+__pycache__/ 

@@ -101,14 +101,18 @@ To use a custom icon for the executable (e.g., `invisiblepad logo.png`):
    ```
    The executable with the new icon will be in the `dist` directory.
 
+## Download Pre-built Executable
+
+You can download the pre-built executable from the [Releases](https://github.com/aashishrajput9838/invisiblepad/releases) page.
+
 ## Building the Executable
 
-To create a standalone executable:
+To create a standalone executable from source:
 
 1. Install PyInstaller: `pip install pyinstaller`
 2. Run the build command:
    ```
-   pyinstaller transparent_notepad.spec
+   pyinstaller TransparentNotepad.spec
    ```
 3. Find the executable in the `dist` folder
 

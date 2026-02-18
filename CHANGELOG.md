@@ -22,6 +22,7 @@ All notable changes to Transparent Notepad will be documented in this file.
 - Maintains all existing functionality while adding taskbar presence
 - Transparent functionality remains unchanged
 - All previous features continue to work as expected
+- Pre-built executable available in release assets
 
 ---
 
